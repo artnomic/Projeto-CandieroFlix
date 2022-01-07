@@ -1,0 +1,111 @@
+:root{
+    --laranjaCandieiro: #F88238;
+    --preta: #303030;
+    --brancaCandieiro: #faebd0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base para o Site */
+
+body{
+    background: var(--laranjaCandieiro);
+    font-family: 'Arial', Times, serif;
+    color: var(--preta);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--brancaCandieiro);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--brancaCandieiro);
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/*Álbum Principal*/
+
+.album-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(48,48,48,0.5),rgba(48,48,48,0.5)100%), url('/img/PraFazerNossaCancao.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: var(--brancaCandieiro);
+}
+
+.album-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(48,48,48,0.5);
+    border: none;
+    color: var(--brancaCandieiro);
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}   
+
+.botao:hover {
+    background-color: var(--laranjaCandieiro);
+    color: var(--preta);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.album-principal .container {
+    width: 70%;
+}
+
+.carrosel-albuns {
+    background-color: var(--preta);
+}
+.box-disco {
+    margin-top: 5px;
+    height: 200%;
+    width: 200%;
+    display: block;
+}
